@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-09T07:49:33.852Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="6pm16FLWIM9H8UcL7mA9" version="15.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-09T14:13:36.104Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="EJJFKsAgilKzZJ6YElmI" version="15.0.6" type="github">
   <diagram id="MWwCbxop2y0VMCHe68bo" name="Page-1">
-    <mxGraphModel dx="541" dy="369" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="652" dy="446" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -277,17 +277,35 @@
             <mxPoint x="920" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lEhJyzqjpE_s5oZcJw1o-56" value="1.处理MHD文件，转换为png图片，用于模型输入。" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
+        <mxCell id="lEhJyzqjpE_s5oZcJw1o-56" value="1.处理MHD文件，转换为png图片，用于模型输入。" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="1320" y="1040" width="190" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="lEhJyzqjpE_s5oZcJw1o-57" value="2.使用图像分割算法检测疑似病灶区域，生成候选集。" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
+        <mxCell id="lEhJyzqjpE_s5oZcJw1o-57" value="2.使用图像分割算法检测疑似病灶区域，生成候选集。" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="1320" y="1110" width="190" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="lEhJyzqjpE_s5oZcJw1o-58" value="3.使用图像分类算法对上一步生成的结果集分类，筛除假阳性病灶。" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
+        <mxCell id="lEhJyzqjpE_s5oZcJw1o-58" value="3.使用图像分类算法对上一步生成的结果集分类，筛除假阳性病灶。" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="1320" y="1180" width="190" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="lEhJyzqjpE_s5oZcJw1o-59" value="4.输出最终结果（在图中标出病灶位置）。" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
+        <mxCell id="lEhJyzqjpE_s5oZcJw1o-59" value="4.输出最终结果（在图中标出病灶位置）。" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="1320" y="1250" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lEhJyzqjpE_s5oZcJw1o-63" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1;endWidth=4.862087614926987;endSize=1.5511627906976744;width=2.0930232558139537;" edge="1" parent="1" source="lEhJyzqjpE_s5oZcJw1o-56" target="lEhJyzqjpE_s5oZcJw1o-57">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1410" y="1200" as="sourcePoint" />
+            <mxPoint x="1460" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lEhJyzqjpE_s5oZcJw1o-64" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1;endWidth=4.862087614926987;endSize=1.5511627906976744;width=2.0930232558139537;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1414.66" y="1150" as="sourcePoint" />
+            <mxPoint x="1414.66" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lEhJyzqjpE_s5oZcJw1o-65" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1;endWidth=4.862087614926987;endSize=1.5511627906976744;width=2.0930232558139537;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1414.6599999999999" y="1220" as="sourcePoint" />
+            <mxPoint x="1414.6599999999999" y="1250" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
